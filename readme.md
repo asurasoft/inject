@@ -187,16 +187,16 @@ func main() {
 ```
 
 ## func Populate ##
-`func Populate(values ...interface{}) error`
+```func Populate(values ...interface{}) error```
 
 使用给定的不完整对象值填补对象图形,填充简单的手段。
 
 ## type Graph ##
-`type Graph struct {
+```type Graph struct {
      Logger Logger //可选，将触发调试日志记录。
      //包含过滤或未导出的字段
  }
-`
+```
 对象图
 
 ### func (*Graph) Objects ###
@@ -212,7 +212,7 @@ func main() {
 
 
 ### func (*Graph) Provide ###
-`func (g *Graph) Provide(objects ...*Object) error`
+```func (g *Graph) Provide(objects ...*Object) error```
 
 向Graph提供对象。 对象文档描述了各个领域的影响。
 
