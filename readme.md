@@ -186,12 +186,12 @@ func main() {
 }
 ```
 
-##func Populate ##
+## func Populate ##
 `func Populate(values ...interface{}) error`
 
 使用给定的不完整对象值填补对象图形,填充简单的手段。
 
-##type Graph ##
+## type Graph ##
 `type Graph struct {
      Logger Logger //可选，将触发调试日志记录。
      //包含过滤或未导出的字段
@@ -199,12 +199,12 @@ func main() {
 `
 对象图
 
-###func (*Graph) Objects ###
+### func (*Graph) Objects ###
 `func (g *Graph) Objects() []*Object`
 
 对象返回所有已知对象，命名以及未命名。 返回的元素不是稳定的顺序。
 
-###func (*Graph) Populate ###
+### func (*Graph) Populate ###
 
 `func (g *Graph) Populate() error`
 
